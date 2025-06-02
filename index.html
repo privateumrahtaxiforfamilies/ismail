@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ismail - Entomologist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: #f5f5f5;
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #2E7D32;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #E8F5E9;
+            padding-bottom: 0.5rem;
+        }
+        
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .profile-img {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .profile-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .bio {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill {
+            background-color: #E8F5E9;
+            color: #2E7D32;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project {
+            border: 1px solid #E8F5E9;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 1.5rem;
+        }
+        
+        .project h3 {
+            margin-bottom: 0.5rem;
+            color: #2E7D32;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-icon {
+            background-color: #E8F5E9;
+            color: #2E7D32;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .title {
+                font-size: 1.2rem;
+            }
+            
+            .about {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Muhammad Ismail</h1>
+            <div class="title">Entomologist | Researcher | Insect Specialist</div>
+            <p>Exploring the fascinating world of insects and their ecosystems</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section about-section">
+            <h2>About Me</h2>
+            <div class="about">
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Muhammad Ismail">
+                </div>
+                <div class="bio">
+                    <p>Hello! I'm Muhammad Ismail, a passionate entomologist with over 10 years of experience studying insect behavior, ecology, and their impact on ecosystems. My work focuses on understanding the intricate relationships between insects and their environments, and how these tiny creatures play crucial roles in our world.</p>
+                    
+                    <p>I hold a Ph.D. in Entomology from [Your University] and have conducted field research in diverse ecosystems across [Countries/Regions]. My research has been published in several peer-reviewed journals, and I frequently collaborate with conservation organizations to protect endangered insect species.</p>
+                    
+                    <div class="skills">
+                        <span class="skill">Insect Taxonomy</span>
+                        <span class="skill">Ecosystem Analysis</span>
+                        <span class="skill">Field Research</span>
+                        <span class="skill">Conservation</span>
+                        <span class="skill">Pest Management</span>
+                        <span class="skill">Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Research & Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346d1f07c9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pollination Research">
+                    <div class="project-info">
+                        <h3>Pollinator Decline Study</h3>
+                        <p>A 5-year longitudinal study tracking bee populations and their pollination efficiency in changing agricultural landscapes.</p>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1517848568502-d03fa74e1964?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Rainforest Canopy">
+                    <div class="project-info">
+                        <h3>Rainforest Canopy Insects</h3>
+                        <p>Documenting previously unknown insect species in tropical rainforest canopies and their ecological roles.</p>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Integrated Pest Management">
+                    <div class="project-info">
+                        <h3>Sustainable Pest Control</h3>
+                        <p>Developing eco-friendly pest management solutions for small-scale farmers in developing regions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Publications</h2>
+            <ul style="list-style-position: inside; margin-left: 1rem;">
+                <li style="margin-bottom: 1rem;">Ismail, M. et al. (2023). "The impact of climate change on migratory patterns of Lepidoptera in South Asia." Journal of Insect Science.</li>
+                <li style="margin-bottom: 1rem;">Ismail, M. & Ahmad, S. (2021). "Novel defensive mechanisms in tropical ant species." Nature Entomology.</li>
+                <li style="margin-bottom: 1rem;">Ismail, M. (2019). "Urban ecosystems as habitats for pollinator species." Urban Ecology Review.</li>
+                <li style="margin-bottom: 1rem;">Ismail, M. et al. (2018). "Taxonomic revision of the genus [Genus] in Southeast Asia." Systematic Entomology.</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>m.ismail@entomology.edu</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+92 300 1234567</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🏢</div>
+                    <div>
+                        <h3>Office</h3>
+                        <p>Department of Entomology<br>University of [Your University]</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <div>
+                        <h3>Social</h3>
+                        <p>LinkedIn: /m-ismail-entomology<br>ResearchGate: Muhammad_Ismail</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Muhammad Ismail. All rights reserved.</p>
+    </footer>
+</body>
+</html>
